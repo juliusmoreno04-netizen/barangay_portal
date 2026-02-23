@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barangay E-Portal Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN FORM -->
+  <div class="form-box" id="loginForm">
+
+    <img src="logo.jpg" alt="Barangay Logo" class="login-logo">
+
+    <h2>Login</h2>
+
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+
+    <button onclick="login()">Login</button>
+
+    <p><span onclick="showForgot()">Forgot Password?</span></p>
+
+    <p>Don't have an account? 
+      <span onclick="showRegister()">Register here</span>
+    </p>
+
+  </div>
+
+  <!-- REGISTER FORM -->
+<div class="form-box hidden" id="registerForm">
+
+  <img src="logo.jpg" alt="Barangay Logo" class="login-logo">
+
+  <h2>Register</h2>
+
+  <input type="text" id="registerUsername" placeholder="Username" required>
+  <input type="text" id="fullName" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Email" required>
+  <input type="password" id="registerPassword" placeholder="Password" required>
+
+  <!-- ID Card Upload with Label -->
+  <label for="idCard" style="font-size:14px; font-weight:bold; color:#ff8800; margin-bottom:5px; display:block;">
+    Upload Your Profile Picture <span style="color:red">*</span>
+  </label>
+  <input type="file" id="idCard" accept="image/*" required>
+
+  <button onclick="register()">Register</button>
+
+  <p>Already have an account? 
+    <span onclick="showLogin()">Login here</span>
+  </p>
+
+</div>
+
+
+  <!-- FORGOT PASSWORD FORM -->
+  <div class="form-box hidden" id="forgotForm">
+
+    <img src="logo.jpg" alt="Barangay Logo" class="login-logo">
+
+    <h2>Reset Password</h2>
+
+    <input type="text" id="forgotUsername" placeholder="Enter Username" required>
+    <input type="password" id="newPassword" placeholder="Enter New Password" required>
+
+    <button onclick="resetPassword()">Reset Password</button>
+
+    <p>Remembered? <span onclick="showLogin()">Login here</span></p>
+
+  </div>
+
+</div>    
+
+<script src="login.js"></script>
+</body>
+</html>

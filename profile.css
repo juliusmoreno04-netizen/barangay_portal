@@ -1,0 +1,181 @@
+/* profile.css */
+
+/* General Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff8800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Settings Button */
+.settings-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.settings-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #da9502;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.settings-button a:hover {
+  background-color: #c96b00;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-dropdown .profile-btn {
+  background-color: #da9502;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-dropdown .profile-btn:hover {
+  background-color: #c96b00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1002;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f7bd00;
+  color: white;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navbar */
+nav {
+  background: #da9502;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #00000057;
+  transform: scale(1.1);
+}
+
+/* Profile Section */
+.profile-section {
+  background: white;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.profile-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #da9502;
+}
+
+.profile-section p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.profile-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Logout Button */
+.profile-section button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 0;
+  font-size: 16px;
+  background: #da9502;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.profile-section button:hover {
+  background: #c96b00;
+  transform: translateY(-2px);
+}
+
+main {
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-image: url('nature.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+/* Footer */
+footer {
+  background: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 0px;
+}

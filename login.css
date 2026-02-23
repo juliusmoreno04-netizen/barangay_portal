@@ -1,0 +1,113 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff8800, #da9502);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CENTER CONTAINER */
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN & REGISTER BOX */
+.form-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.4s ease;
+}
+
+/* HIDDEN CLASS */
+.hidden {
+  display: none;
+}
+
+/* LOGO */
+.login-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0 auto 15px auto;
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  color: #ff8800;
+  margin-bottom: 20px;
+}
+
+/* INPUT FIELDS */
+input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff8800;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 136, 0, 0.4);
+}
+
+/* BUTTON */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #ff8800;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c96b00;
+  transform: translateY(-2px);
+}
+
+/* TEXT */
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+/* REGISTER / LOGIN LINK */
+span {
+  color: #da9502;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+span:hover {
+  text-decoration: underline;
+}
+
+/* SIMPLE FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

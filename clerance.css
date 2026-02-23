@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #333;
+}
+header {
+  background: #ff8800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background: #da9502;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+nav a:hover {
+  color: #00000057;
+  transform: scale(1.1);
+}
+main {
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  background-image: url('nature.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+form {
+  background: white;
+  display: inline-block;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input,
+button {
+  padding: 25px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #f7bd00;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #c96b00;
+}
+footer {
+  background: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin-top: 0px;
+}

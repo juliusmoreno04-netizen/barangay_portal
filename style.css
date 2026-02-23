@@ -1,0 +1,230 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Reset and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff8800;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Settings Button (upper left) */
+.settings-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1002;
+}
+
+.settings-button a {
+  text-decoration: none;
+  color: white;
+  background-color: #da9502;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.settings-button a:hover {
+  background-color: #c96b00;
+}
+
+/* Profile Dropdown (upper right) */
+.profile-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1002;
+}
+
+.profile-dropdown .profile-btn {
+  background-color: #da9502;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-dropdown .profile-btn:hover {
+  background-color: #c96b00;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 140px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1003;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f7bd00;
+  color: white;
+}
+
+.profile-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Navbar */
+nav {
+  background: #da9502;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+nav a:hover {
+  color: #00000057;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;             /* 80% of viewport height */
+  min-height: 450px;        /* don't shrink too much on mobile */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* center vertically */
+  align-items: center;       /* center horizontally */
+  background-image: url(logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;   /* maintain aspect ratio */
+  background-position: center;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+/* Hero content */
+.hero h1,
+.hero p,
+.hero button {
+  position: relative;
+  z-index: 1;
+  margin: 10px 0;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  background: #f7bd00;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background: #c96b00;
+  transform: translateY(-3px);
+}
+
+/* Services */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.7s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 1em;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: #ff8800;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Profile - Barangay E-Portal</title>
+  <link rel="stylesheet" href="profile.css" />
+  <script defer src="profile.js"></script> <!-- JS for login check and displaying info -->
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="settings-button">
+      <a href="settings.html">Settings</a>
+    </div>
+
+    <div class="profile-dropdown">
+      <button class="profile-btn">Profile ▼</button>
+      <div class="dropdown-content">
+        <a href="profile.html">View Profile</a>
+        <a href="#" onclick="logout()">Logout</a>
+      </div>
+    </div>
+
+    <h1>Barangay E-Portal</h1>
+    <p>Connecting the Barangay and the Community</p>
+  </header>
+
+ <!-- Navbar -->
+<nav id="navbar"> 
+  <a href="index.html ">Home</a>
+  <a href="services.html">Services</a> <!-- Smooth scroll target -->
+  <a href="index.html">Announcements</a>
+</nav> 
+
+
+  <!-- Profile Content -->
+   <main>
+  <section class="profile-section" style="padding: 40px; max-width: 600px; margin: auto;">
+    <h2>Your Profile</h2>
+
+    <p><strong>Username:</strong> <span id="profileUsername"></span></p>
+    <p><strong>Full Name:</strong> <span id="profileFullName"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+
+    <p><strong>ID Card:</strong></p>
+    <img id="profileIdCard" src="" alt="User ID Card" style="max-width: 250px; border: 1px solid #ccc; margin-top: 10px;">
+
+    <br><br>
+    <button onclick="logout()" style="padding:10px 20px; background:#da9502; color:white; border:none; border-radius:5px; cursor:pointer;">Logout</button>
+  </section>
+</main>
+  <!-- Footer -->
+  <footer>
+    <p>Designed by the Barangay IT Team.</p>
+    <p>About Us</p>
+    <p>Group 5</p>
+    <p>© 2026 Barangay E-Portal. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
